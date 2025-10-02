@@ -1,0 +1,80 @@
+.beforeAfterSwiper {
+    overflow: visible;
+}
+
+.service-detail-before-after-card {
+    border-radius: 16px;
+    overflow: hidden;
+    width: calc(50% - 10px);
+    background-color: #FFF;
+    transition: .5s;
+
+    @media (min-width: 721px) {
+        &:not(.swiper-slide-visible) {
+            opacity: .5;
+        }
+    }
+
+    .image-compare {
+        aspect-ratio: 640/380;
+        height: auto;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .bottom {
+        padding: 20px 40px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .name {
+            font-family: Manrope;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 120%;
+            letter-spacing: 0px;
+            text-transform: uppercase;
+        }
+
+        .default {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .service-detail-before-after-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 500px) {
+    .service-detail-before-after-card {
+        .image-compare {
+            aspect-ratio: 320/190;
+        }
+    
+        .bottom {
+            padding: 20px 20px 30px;
+            gap: 20px;
+    
+            .name {
+                font-family: Manrope;
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 120%;
+                letter-spacing: 0px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

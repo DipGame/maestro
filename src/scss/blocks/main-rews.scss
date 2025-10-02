@@ -1,0 +1,198 @@
+.rew-section-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rew-section-card {
+    background-color: #F8F6F4;
+    border-radius: 10px;
+    height: 60px;
+    padding: 0 20px;
+    width: 100%;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    p {
+        font-family: Manrope;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    img {
+        height: 24px;
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
+.main-rews-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.main-rews-card {
+    background-color: #F8F6F4;
+    border-radius: 16px;
+    padding: 30px 30px 40px;
+    min-height: 262px;
+    height: fit-content;
+
+    .top {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .name {
+            font-family: Manrope;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 18px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+
+        .date {
+            font-family: Manrope;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #76746E;
+        }
+    }
+
+    .meddle {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+}
+
+.stars-cont {
+    display: flex;
+    gap: 6px;
+}
+
+.logo-section-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    img {
+        max-width: 24px;
+        max-height: 24px;
+        min-height: 24px;
+        min-width: 24px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    p {
+        font-family: Manrope;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+}
+
+.button-more {
+    margin-top: 20px;
+    border-bottom: 1px solid #76746E;
+    width: fit-content;
+    font-family: Manrope;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    text-decoration-offset: 50%;
+    text-decoration-thickness: 3%;
+    text-decoration-skip-ink: auto;
+    color: #76746E;
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+    .main-rews {
+        .def_title {
+            flex-direction: column;
+
+            h2 {
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .main-rews-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .main-rews-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-rews-card {
+        padding: var(--def-padding) var(--def-padding) 24px;
+
+        .top {
+            .name {
+                font-family: Manrope;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+
+            .date {
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+        }
+
+    }
+}

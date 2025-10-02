@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./fonts/Manrope.css" />
+
+    <link rel="stylesheet" href="./css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./css/image-compare.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2e485074-4e7a-4d9b-9e83-432aa96ddebf&lang=ru_RU"
+        type="text/javascript"></script>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+    <div class="invise" id="isAdmin"></div>
+
+    @@include('blocks/overlay.html')
+    @@include('blocks/popup-form.html')
+    @@include('blocks/popupCheck.html')
+    @@include('blocks/load.html')
+    @@include('blocks/header.html')
+    <main>
+
+        <div class="bread flex padding" id="bread">
+            <ul class="def_div">
+
+                <li>
+
+                    <a href="/" title="Главная" itemprop="item">
+                        Главная
+                    </a>
+                </li>
+                <li>/</li>
+                <li>
+
+                    <a href="/" title="Главная" itemprop="item">
+                        Взрослая стоматология
+                    </a>
+                </li>
+
+                <li>/</li>
+                <li>
+                    Профессиональная гигиена
+                </li>
+            </ul>
+        </div>
+
+        <h1 class="title invise">
+            Воеводенко
+            Ольга Николаевна
+        </h1>
+        @@include('blocks/docs-detail-baner.html')
+        @@include('blocks/docs-detail-anchor.html')
+        @@include('blocks/docs-detail-education.html')
+        @@include('blocks/docs-detail-sertificate.html')
+        @@include('blocks/docs-detail-course.html')
+        @@include('blocks/docs-detail-before-after.html')
+        @@include('blocks/service-detail-rews.html')
+        @@include('blocks/main-desk-form-v2.html')
+        @@include('blocks/main-map.html')
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/addSwiper.js"></script>
+    <script src="./js/copyElements.js"></script>
+    <script src="./js/image-compare.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+
+</html>

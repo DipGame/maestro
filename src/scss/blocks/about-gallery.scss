@@ -1,0 +1,53 @@
+.about-gallery {
+    max-width: calc(var(--def-width) + var(--def-padding) + var(--def-padding));
+    padding: 0 var(--def-padding);
+}
+
+
+
+@media (min-width: 1661px) {
+    .aboutGallerySwiper {
+        width: 100%;
+        overflow: visible;
+    
+        .swiper-wrapper {
+            align-items: center;
+            min-height: 732px;
+        }
+    }
+    
+    .about-gallery-card {
+        width: 420px !important;
+        transition: .5s;
+        aspect-ratio: 420/580;
+        border-radius: 16px;
+        background-position: center;
+        background-size: cover;
+    
+        &.swiper-slide.swiper-slide-active {
+            width: 530px !important;
+            aspect-ratio: 530/732;
+        }
+    }
+}
+
+@media (max-width: 1660px) {
+
+    .main-tecnologes-section .fix-0210 {
+        padding: 0 var(--def-padding);
+    }
+
+    .about-gallery-card {
+        aspect-ratio: 420/580;
+        border-radius: 16px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-gallery-card {
+       width: 100%;
+       max-width: 320px;
+    }
+}

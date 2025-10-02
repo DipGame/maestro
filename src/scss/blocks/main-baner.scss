@@ -1,0 +1,286 @@
+.main-baner-card,
+.main-baner-section,
+.main-baner {
+    width: 100%;
+    --main-baner-back: #EBEEF4;
+    --min-height-main-baner: 650px;
+
+    @media (max-width: 720px) {
+        --min-height-main-baner: 500px;
+    }
+}
+
+.mainBanerSwiper {
+    position: relative;
+}
+
+.main-baner {
+    background: var(--main-baner-back);
+}
+
+.main-baner-card {
+    background-size: 75% auto;
+    background-position: 128% 64%;
+    min-height: var(--min-height-main-baner);
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    * {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::before {
+        position: absolute;
+        z-index: 1;
+        background: var(--main-baner-back);
+        content: "";
+        width: 32%;
+        height: 100%;
+        display: block;
+        -webkit-box-shadow: 21px 0px 31px 28px #EBEEF4;
+        -moz-box-shadow: 21px 0px 31px 28px #EBEEF4;
+        box-shadow: 21px 0px 31px 28px #EBEEF4;
+    }
+
+    .def_div {
+        max-width: calc(var(--def-width) + var(--def-padding) + var(--def-padding));
+        padding: 80px var(--def-padding);
+        height: var(--min-height-main-baner);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+
+        .h1 {
+            font-family: Manrope;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 72px;
+            leading-trim: NONE;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            max-width: 840px;
+
+            * {
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 72px;
+                leading-trim: NONE;
+                line-height: 110.00000000000001%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                display: contents;
+            }
+
+            span {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.main-baner-card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 600px;
+
+    .default {
+        margin: 0;
+        font-family: Manrope;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 150%;
+        letter-spacing: 0%;
+
+        * {
+            font-family: Manrope;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+        }
+    }
+
+    .button {
+        max-width: 207px;
+    }
+}
+
+@media (max-width: 1660px) {
+    .main-baner-card {
+        background-size: auto 100%;
+    }
+
+    .main-baner-card::before {
+        width: 55%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-baner-card::before {
+        width: 30%;
+    }
+
+    .main-baner-card {
+        background-position: 100% 64%;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-baner-card {
+        background-position: 100% 100%;
+        background-size: auto 70%;
+
+        &::after {
+            width: 100%;
+            content: "";
+            position: absolute;
+            height: 100%;
+            bottom: 70%;
+            content: 0;
+            z-index: 1;
+            background-color: #EBEEF4;
+            -webkit-box-shadow: 0px 21px 31px 28px #EBEEF4;
+            -moz-box-shadow: 0px 21px 31px 28px #EBEEF4;
+            box-shadow: 0px 21px 31px 28px #EBEEF4;
+        }
+    }
+
+    .main-baner .swiper-slide-help-cont {
+        align-items: start;
+        padding: 0 24px;
+        bottom: 28px;
+    }
+
+    .main-baner-card .def_div {
+        height: fit-content;
+        gap: 40px;
+        padding: 40px var(--def-padding);
+
+        .h1 {
+            font-family: Manrope;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 40px;
+            leading-trim: NONE;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+
+            * {
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 40px;
+                leading-trim: NONE;
+                line-height: 110.00000000000001%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                display: contents;
+            }
+        }
+
+        .default {
+            font-family: Manrope;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 18px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+
+            * {
+                font-family: Manrope;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 18px;
+                leading-trim: NONE;
+                line-height: 150%;
+                letter-spacing: 0%;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 500px) {
+    .main-baner-card .def_div {
+        .h1 {
+            font-family: Manrope;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 30px;
+            leading-trim: NONE;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+
+            * {
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 30px;
+                leading-trim: NONE;
+                line-height: 110.00000000000001%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                display: contents;
+            }
+        }
+
+        .default {
+            font-family: Manrope;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+
+            * {
+                font-family: Manrope;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 150%;
+                letter-spacing: 0%;
+            }
+        }
+
+        .button {
+            max-width: 196px;
+            min-height: 50px;
+            font-family: Manrope;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .main-baner-card-bottom {
+        gap: 20px;
+    }
+
+    .main-baner-card::before {
+        box-shadow: 21px 0px 34px 39px #EBEEF4;
+        left: -100px;
+    }
+}

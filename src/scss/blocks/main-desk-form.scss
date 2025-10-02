@@ -1,0 +1,320 @@
+.main-desk-form-section {
+    padding: 40px;
+}
+
+.main-desk-form-cont {
+    position: relative;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: #D1DAEA;
+    width: 100%;
+    padding: 0 var(--def-padding);
+    overflow: hidden;
+
+    .def_div {
+        display: flex;
+        gap: 40px;
+        padding: 80px 0;
+        padding-left: 110px;
+    }
+
+    .woman-img,
+    .teez-img,
+    .vector_1,
+    .vector_2,
+    .vector_3 {
+        position: absolute;
+    }
+
+    .vector_1 {
+        right: 10%;
+        height: 100%;
+    }
+
+    .vector_2 {
+        left: 0;
+        top: 0;
+    }
+
+    .vector_3 {
+        left: 0;
+        bottom: 0;
+    }
+
+    .woman-img {
+        bottom: 0;
+        left: 0;
+    }
+
+    .teez-img {
+        bottom: 0;
+        right: 0;
+    }
+
+    @media (max-width: 1860px) {
+        .woman-img {
+            object-fit: contain;
+            height: 50%;
+        }
+    }
+}
+
+.main-desk-form-left {
+    width: 100%;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-desk-form-name {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 56px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.main-desk-form-prev-text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.main-desk-form-right {
+    width: 100%;
+    max-width: 530px;
+    position: relative;
+    z-index: 1;
+
+    form {
+
+        .inputs_cont {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input,
+            select,
+            textarea {
+                width: 100%;
+                padding: 20px;
+
+                resize: none;
+                position: relative;
+                z-index: 1;
+
+                &:focus {
+                    outline: none;
+
+                }
+            }
+
+            textarea {
+                min-height: 100px;
+            }
+
+            .input_cont,
+            .select-cont {
+                position: relative;
+                transition: .3s;
+                background-color: #FFFFFF;
+                border-radius: 8px;
+                border: 1px solid #002e8200;
+                overflow: hidden;
+
+                &.focus {
+                    border: 1px solid #002e82;
+
+                    select {
+                        color: var(--text-color);
+                    }
+
+                    .placeholder {
+                        font-size: 12px;
+                        transform: translateY(0);
+                        top: 6px;
+                    }
+                }
+
+                select {
+                    color: #787C87;
+                    appearance: none;
+                    cursor: pointer;
+                    padding-right: 60px;
+                }
+
+                &.err {
+                    border: 1px solid var(--color-red);
+                }
+            }
+
+            .select-cont {
+
+                svg {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 20px;
+
+                }
+            }
+
+            .placeholder {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                right: 20px;
+                left: 20px;
+                color: #787C87;
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                z-index: 0;
+            }
+
+            .input_cont.v2 {
+                .placeholder {
+                    top: 20px;
+                    transform: none;
+                }
+
+                &.focus {
+                    .placeholder {
+                        font-size: 12px;
+                        top: 6px;
+                    }
+                }
+            }
+        }
+
+        .checkbox {
+            margin: 30px 0;
+        }
+
+        .button[type=submit] {
+            max-width: 192px;
+            min-height: 60px;
+            font-family: Manrope;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-desk-form-cont .def_div {
+        flex-direction: column;
+    }
+
+    .main-desk-form-cont .teez-img {
+        display: none;
+    }
+
+    .main-desk-form-cont {
+
+        .woman-img {
+            left: auto;
+            right: 0;
+            height: auto;
+            transform: translateX(50%);
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .main-desk-form-cont .def_div {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-desk-form-cont .def_div {
+        padding-bottom: 253px;
+    }
+
+    .main-desk-form-name {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-desk-form-section.v2 {
+        padding-bottom: 0;
+    }
+    .main-desk-form-section.v3 {
+        padding-top: 0;
+    }
+    
+    .main-desk-form-cont .def_div {
+        padding-top: 40px;
+        gap: 20px;
+
+        .inputs_cont {
+            * {
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .main-desk-form-cont {
+        border-radius: 0;
+    }
+
+    .main-desk-form-section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main-desk-form-name {
+        font-family: Manrope;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 30px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .main-desk-form-prev-text {
+        font-family: Manrope;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }
+
+    .main-desk-form-cont .woman-img {
+        height: 335px;
+        transform: translateX(38%);
+    }
+}

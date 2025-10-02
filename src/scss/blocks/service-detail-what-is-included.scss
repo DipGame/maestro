@@ -1,0 +1,16 @@
+.what-is-included {
+    .default {
+        margin: 0 0 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .what-is-included-section {
+        .what-is-included {
+            .default.last {
+                margin-bottom: 40px;
+            }
+        }
+        
+    }
+}

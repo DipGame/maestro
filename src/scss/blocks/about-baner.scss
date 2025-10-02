@@ -1,0 +1,143 @@
+.about-baner-section {
+    padding: 0 40px;
+    position: relative;
+    top: -74px;
+}
+
+.about-baner {
+    background-color: #EAF4FE;
+    border-radius: 24px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+
+    .vector_2-def {
+        top: -100px;
+    }
+}
+
+.about-baner-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+
+    .left {
+        width: 100%;
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .h1 {
+            font-family: Manrope;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 56px;
+            leading-trim: NONE;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+        }
+
+        .default {
+            font-family: Manrope;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+
+
+            * {
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 18px;
+                leading-trim: NONE;
+                line-height: 150%;
+                letter-spacing: 0%;
+            }
+        }
+    }
+}
+
+.about-baner-img {
+    position: absolute;
+    bottom: 0;
+    right: 9%;
+    z-index: 0;
+}
+
+@media (max-width: 1500px) {
+    .about-baner-section {
+        padding: 0;
+    }
+}
+
+@media (max-width: 1280px) {
+    .about-baner-img {
+        right: 0;
+        transform: translateX(21%);
+    }
+}
+
+@media (max-width: 500px) {
+    .about-baner-section {
+        top: -54px;
+
+    }
+
+    .about-baner-container {
+        padding-bottom: 344px;
+        align-items: start;
+    }
+
+    .about-baner-img {
+        transform: translateX(-50%);
+        width: 445px;
+        left: 50%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .about-baner-container .left {
+        gap: 40px;
+
+        .h1 {
+            font-family: Manrope;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 40px;
+            leading-trim: NONE;
+            line-height: 110.00000000000001%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+        }
+
+        .default {
+            font-family: Manrope;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+
+            * {
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 150%;
+                letter-spacing: 0%;
+            }
+        }
+    }
+}

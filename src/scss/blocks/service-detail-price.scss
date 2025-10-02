@@ -1,0 +1,137 @@
+.docs-detail-education .service-detail-price-cont {
+    flex-direction: column;
+
+    .default {
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.service-detail-price-cont {
+    border-radius: 16px;
+    background-color: #F8F6F4;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+
+    .name {
+        max-width: 380px;
+        font-family: Manrope;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+
+    ul:not(.docs-detail-education ul) {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        max-width: 820px;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            a {
+                font-family: Manrope;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 18px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                text-decoration: underline;
+            }
+
+            p {
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 18px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .service-detail-price-cont {
+        flex-direction: column;
+
+        .name {
+            max-width: none;
+        }
+
+        ul {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .service-detail-price-cont {
+        padding: 20px 20px 40px;
+
+        .name {
+            font-family: Manrope;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+
+        ul {
+            gap: 20px;
+
+            li {
+                a {
+                    font-family: Manrope;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 16px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    text-decoration: underline;
+                    text-decoration-style: solid;
+                    text-decoration-offset: 50%;
+                    text-decoration-thickness: 1.5%;
+                    text-decoration-skip-ink: auto;
+                }
+
+                p {
+                    font-family: Manrope;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 16px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

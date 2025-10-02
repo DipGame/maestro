@@ -1,0 +1,60 @@
+.mainSertificateSwiper {
+    overflow: visible;
+}
+
+.main-sertificate-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: .5s;
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: 420/580;
+    }
+
+    .bottom {
+        padding: 30px 30px 40px;
+
+        .name {
+            font-family: Manrope;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+        }
+    }
+
+    @media (min-width: 501px) {
+        &.swiper-slide:not(.swiper-slide-visible) {
+            opacity: .5;
+        }
+    }
+  
+}
+
+@media (max-width: 500px) {
+    .main-sertificate-card {
+        img {
+            aspect-ratio: 320/442;
+        }
+
+        .bottom {
+
+            .name {
+                font-family: Manrope;
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 130%;
+                letter-spacing: 0%;
+            }
+        }
+    }
+}

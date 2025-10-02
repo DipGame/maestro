@@ -1,0 +1,203 @@
+.docs-tabs-select-container {
+    margin-bottom: 40px;
+
+    .select-cont {
+        position: relative;
+        transition: .3s;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        border: 1px solid #002e8200;
+        overflow: hidden;
+
+        &.focus {
+            select {
+                color: var(--text-color);
+            }
+        }
+
+        select {
+            color: #787C87;
+            appearance: none;
+            cursor: pointer;
+            padding-right: 60px;
+            padding-left: 20px;
+            height: 60px;
+            border: 1px solid #002D82;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        &.err {
+            border: 1px solid var(--color-red);
+        }
+    }
+
+    .select-cont {
+
+        svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+
+        }
+    }
+
+}
+
+.works-anchor-card {
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #F8F6F4;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .image-compare,
+    .img {
+        aspect-ratio: 640/380;
+        height: fit-content;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .bottom {
+        padding: 20px 20px 0;
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            font-family: Manrope;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 120%;
+            letter-spacing: 0px;
+            text-transform: uppercase;
+        }
+
+        .default {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        
+    }
+
+    .small-card {
+        max-width: none;
+        margin: auto 20px 40px;
+
+        img {
+            aspect-ratio: 70/90;
+            width: 70px;
+        }
+
+        .small-card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .name {
+                font-family: Manrope;
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 20px;
+                leading-trim: NONE;
+                line-height: 140%;
+                letter-spacing: 0%;
+                text-transform: none;
+            }
+
+            .prof {
+                font-family: Manrope;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .works-anchor-section {
+        padding: 0;
+
+        .tabs-cont, .docs-tabs-select-container {
+            padding: 0 var(--def-padding);
+        }
+    }
+
+    .works-anchor-container {
+        gap: 16px;
+    }
+
+    .works-anchor-card {
+        border-radius: 0;
+    }
+
+    .works-anchor-card {
+        height: fit-content;
+    
+        .image-compare,
+        .img {
+            aspect-ratio: 375/222;
+            height: fit-content;
+        }
+    
+        .bottom {
+            padding: var(--def-padding) var(--def-padding) 0;
+    
+            .name {
+                font-family: Manrope;
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 120%;
+                letter-spacing: 0px;
+                text-transform: uppercase;
+            }
+    
+            .default {
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    
+        .small-card {
+            margin: 0 var(--def-padding) 30px;
+    
+            .small-card-container {
+                .name {
+                    font-family: Manrope;
+                    font-weight: 600;
+                    font-style: SemiBold;
+                    font-size: 16px;
+                    leading-trim: NONE;
+                    line-height: 140%;
+                    letter-spacing: 0%;
+                }
+    
+                .prof {
+                    font-family: Manrope;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 14px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.service-detail-anchor-section {
+    margin-bottom: 60px;
+}
+
+.service-detail-anchor {
+
+    ul {
+        display: flex;
+        gap: 50px;
+
+        li {
+
+            a {
+                display: block;
+                font-family: Manrope;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 24px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                padding-bottom: 18px;
+                border-bottom: 1px solid #ffffff00;
+                white-space: nowrap;
+
+                &.active {
+                    color: #002D82;
+                    border-bottom: 1px solid #002D82;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+    .service-detail-anchor {
+
+        ul {
+            padding-bottom: 19px;
+            overflow: hidden;
+            overflow-x: scroll;
+            gap: 20px;
+
+            li {
+
+                a {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .service-detail-anchor-section {
+        margin-bottom: 24px;
+    }
+}
